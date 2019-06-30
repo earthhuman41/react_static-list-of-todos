@@ -9,9 +9,15 @@ function User(props) {
   });
   
   return (
-    <div class = "user">
-      <p class = "user__name">{activeUser.name}</p>
-      <p class = "user__username">{activeUser.username}</p>
+    <div className = "user">
+      <p className = "user__name">{activeUser.name}</p>
+      <p className = "user__username">{activeUser.username}</p>
+      <section className = "user__details">
+        <h2 className="user__details__header">Details:</h2>
+        <p>company: {activeUser.company.name}</p>
+        <p>phone: {activeUser.phone}</p>
+        <p>website: {activeUser.website}</p>
+      </section>
     </div>
   )
 }

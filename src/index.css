@@ -29,14 +29,37 @@ ul {
 .user {
   background: #282c34;
   color: #eee;
-  width: 200px;
-  padding: 40px;
+  padding: 20px;
   box-sizing: border-box;
+}
+
+.user__name {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.user__username {
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+
+.user__username:before {
+  content: '#';
+}
+
+.user__details p + p{
+  margin-top: 5px;
+}
+
+.user__details__header {
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 5px;
 }
 
 .todo-list {
   background: #999;
-  padding: 40px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -57,21 +80,4 @@ ul {
 .todo-list__item--completed {
   opacity: 0.5;
   text-decoration: line-through;
-}
-
-.user {
-
-}
-
-.user__name {
-  font-size: 24px;
-  margin-bottom: 5px;
-}
-
-.user__username {
-  opacity: 0.5;
-}
-
-.user__username:before {
-  content: '#';
 }
